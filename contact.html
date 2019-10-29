@@ -445,6 +445,16 @@
             $('#contact_form').prepend('Thank you for contacting we will reach you out soon...');
         });
     </script>
+    <script type="text/javascript">
+        $('#register_form').on('submit', function(e) {
+            $('#register_form *').fadeOut(2000);
+            $('#register_form').prepend('Thank you for Registering we will reach you out soon...');
+        });
+        $('#contact_form').on('submit', function(e) {
+            $('#contact_form *').fadeOut(2000);
+            $('#contact_form').prepend('Thank you for contacting we will reach you out soon...');
+        });
+    </script>
 </body>
 
 </html>
