@@ -132,9 +132,7 @@
             </div>
         </div>
     </nav>
-    <!-- End navbar -->
-
-    <!-- registermodal Modal -->
+    <!-- End navbar -->    <!-- registermodal Modal -->
     <div class="modal fade fade-scale registermodal" id="registermodal" tabindex="-1" role="dialog">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
@@ -142,27 +140,27 @@
                     <div class="modal-header">
                         <h3 class="title">Register Now</h3>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                </button>
+                                <span aria-hidden="true">&times;</span>
+                            </button>
                     </div>
 
                     <form class="p-3 pb-0" id="register_form" name="register_form" target="hidden_iframe" onsubmit="submitted=true;" action="https://docs.google.com/forms/d/e/1FAIpQLSfM-IeK1T2QiAiTpuyzCsbXPWREOI2llrLnt33K8n2OhyWkfg/formResponse?" method="post">
                         <div class="row">
                             <div class="col-lg-6">
                                 <div class="form-group">
-                                    <input type="text" class="form-control" name="entry.2005620554" id="id_username" placeholder="Username">
+                                    <input type="text" class="form-control" name="entry.2005620554" id="id_username" placeholder="Username"  required >
                                 </div>
                             </div>
 
                             <div class="col-lg-6">
                                 <div class="form-group">
-                                    <input type="email" class="form-control" name="entry.1045781291" id="id_email" placeholder="Email address">
+                                    <input type="email" class="form-control" name="entry.1045781291" id="id_email" placeholder="Email address" required>
                                 </div>
                             </div>
                         </div>
 
                         <div class="form-group">
-                            <input type="text" class="form-control" name="entry.1166974658" id="id_phone_number" placeholder="Phone number">
+                            <input type="number" class="form-control" name="entry.1166974658" id="id_phone_number" placeholder="Phone number" required>
                         </div>
 
 
@@ -345,13 +343,13 @@
             <div class="popular-course-carosel owl-carousel owl-theme owl-theme-s2">
                 <!-- Course #1 -->
                 <div class="single-course">
-                    <a href="#" class="thumb-img">
+                    <a href="course-iot.html" class="thumb-img">
                         <span class="overly"></span>
                         <img src="assets/img/courses/125085-OREOGQ-2732.jpg" alt="Course Image">
                     </a>
 
                     <div class="course-caption">
-                        <h3><a href="#">IoT</a></h3>
+                        <h3><a href="course-iot.html">IoT</a></h3>
                         <p>SIoT's IoT Certification Course is designed by industry experts. You will be working on different types of boards and </p>
                         <div class="mt-20 text-center">
                             <a href="course-iot.html" class="default-btn white-btn red-border-btn">Read More</a>
@@ -361,13 +359,13 @@
 
                 <!-- Course #2 -->
                 <div class="single-course">
-                    <a href="#" class="thumb-img">
+                    <a href="course-robotic.html" class="thumb-img">
                         <span class="overly"></span>
                         <img src="assets/img/courses/robotics.jpg" alt="Course Image">
                     </a>
 
                     <div class="course-caption">
-                        <h3><a href="#">Robotics</a></h3>
+                        <h3><a href="course-robotic.html">Robotics</a></h3>
                         <p>SIoT’s Robotic Certification Course introduces you to the concepts of basic robotics, how to build our own robots and</p>
                         <div class="mt-20 text-center">
                             <a href="course-robotic.html" class="default-btn white-btn red-border-btn">Read More</a>
@@ -377,13 +375,13 @@
 
                 <!-- Course #3 -->
                 <div class="single-course">
-                    <a href="#" class="thumb-img">
+                    <a href="course-electronics.html" class="thumb-img">
                         <span class="overly"></span>
                         <img src="assets/img/courses/electronics.jpg" alt="Course Image">
                     </a>
 
                     <div class="course-caption">
-                        <h3><a href="#">Basic Electronics</a></h3>
+                        <h3><a href="course-electronics.html">Basic Electronics</a></h3>
                         <p>Electronics is fundamental to modern world. This course will teach the fundamentals from roots of Electronics </p>
                         <div class="mt-20 text-center">
                             <a href="course-electronics.html" class="default-btn white-btn red-border-btn">Read More</a>
@@ -393,13 +391,13 @@
 
                 <!-- Course #4 -->
                 <div class="single-course">
-                    <a href="#" class="thumb-img">
+                    <a href="" class="thumb-img">
                         <span class="overly"></span>
                         <img src="assets/img/courses/course-4.jpg" alt="Course Image">
                     </a>
 
                     <div class="course-caption">
-                        <h3><a href="#">We will add following courses in future</a></h3>
+                        <h3><a href="">We will add following courses in future</a></h3>
                         <ul class="discblock discblock-none pb-0">
                             <li class="p-0">1. ML</li>
                             <li class="p-0">2. AI</li>
@@ -672,29 +670,32 @@
         <div class="container">
             <div class="register-form box-content p-0 no-bg">
                 <h3 class="title">Register Now</h3>
-                <form>
+                <form   id="register_form-home" name="register_form" target="hidden_iframe" onsubmit="submitted=true;" action="https://docs.google.com/forms/d/e/1FAIpQLSfM-IeK1T2QiAiTpuyzCsbXPWREOI2llrLnt33K8n2OhyWkfg/formResponse?" method="post">
                     <div class="row">
                         <div class="col-lg-6">
                             <div class="form-group">
-                                <input type="text" class="form-control" id="id_username" placeholder="Username">
+                                <input type="text" class="form-control" name="entry.2005620554" id="id_username_home" placeholder="Username"  required >
                             </div>
                         </div>
 
                         <div class="col-lg-6">
                             <div class="form-group">
-                                <input type="email" class="form-control" id="id_email" placeholder="Email address">
+                                <input type="email" class="form-control" name="entry.1045781291" id="id_email_home" placeholder="Email address" required>
                             </div>
                         </div>
                     </div>
 
                     <div class="form-group">
-                        <input type="text" class="form-control" id="id_phone_number" placeholder="Phone number">
+                        <input type="number" class="form-control" name="entry.1166974658" id="id_phone_number_home" placeholder="Phone number" required>
                     </div>
+
 
                     <div class="form-foot">
                         <button type="submit" class="btn default-btn white-btn red-btn">Sign Up</button>
                     </div>
                 </form>
+                <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"></iframe>
+                
             </div>
         </div>
     </section>
@@ -839,11 +840,15 @@
     <script type="text/javascript">
         $('#register_form').on('submit', function(e) {
             $('#register_form *').fadeOut(2000);
-            $('#register_form').prepend('Thank you for Registering we will reach you out soon...');
+            $('#register_form').prepend('<div class="text-center">Thank you for Registering we will reach you out soon...</div>');
+        });
+        $('#register_form-home').on('submit', function(e) {
+            $('#register_form-home *').fadeOut(2000);
+            $('#register_form-home').prepend('<div class="text-center">Thank you for Registering we will reach you out soon...</div>');
         });
         $('#contact_form').on('submit', function(e) {
             $('#contact_form *').fadeOut(2000);
-            $('#contact_form').prepend('Thank you for contacting we will reach you out soon...');
+            $('#contact_form').prepend('<div class="text-center">Thank you for contacting we will reach you out soon...</div>');
         });
     </script>
 </body>

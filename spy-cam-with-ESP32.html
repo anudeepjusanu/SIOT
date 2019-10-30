@@ -130,9 +130,7 @@
             </div>
         </div>
     </nav>
-    <!-- End navbar -->
-
-    <!-- registermodal Modal -->
+    <!-- End navbar -->    <!-- registermodal Modal -->
     <div class="modal fade fade-scale registermodal" id="registermodal" tabindex="-1" role="dialog">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
@@ -140,27 +138,27 @@
                     <div class="modal-header">
                         <h3 class="title">Register Now</h3>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                </button>
+                                <span aria-hidden="true">&times;</span>
+                            </button>
                     </div>
 
                     <form class="p-3 pb-0" id="register_form" name="register_form" target="hidden_iframe" onsubmit="submitted=true;" action="https://docs.google.com/forms/d/e/1FAIpQLSfM-IeK1T2QiAiTpuyzCsbXPWREOI2llrLnt33K8n2OhyWkfg/formResponse?" method="post">
                         <div class="row">
                             <div class="col-lg-6">
                                 <div class="form-group">
-                                    <input type="text" class="form-control" name="entry.2005620554" id="id_username" placeholder="Username">
+                                    <input type="text" class="form-control" name="entry.2005620554" id="id_username" placeholder="Username"  required >
                                 </div>
                             </div>
 
                             <div class="col-lg-6">
                                 <div class="form-group">
-                                    <input type="email" class="form-control" name="entry.1045781291" id="id_email" placeholder="Email address">
+                                    <input type="email" class="form-control" name="entry.1045781291" id="id_email" placeholder="Email address" required>
                                 </div>
                             </div>
                         </div>
 
                         <div class="form-group">
-                            <input type="text" class="form-control" name="entry.1166974658" id="id_phone_number" placeholder="Phone number">
+                            <input type="number" class="form-control" name="entry.1166974658" id="id_phone_number" placeholder="Phone number" required>
                         </div>
 
 
@@ -178,16 +176,16 @@
 
 
     <!-- Page Banner -->
-    <div class="page-banner" style="background-image: url('assets/img/action-3435773_1920.jpg');">
+    <div class="page-banner" style="background-image: url('assets/img/workshop.jpg');">
         <div class="container">
             <div class="banner-text">
                 <h1>Workshops</h1>
-                <nav aria-label="breadcrumb">
+                <!-- <nav aria-label="breadcrumb">
                     <ol class="breadcrumb">
                         <li class="breadcrumb-item"><a href="index.html">Home</a></li>
                         <li class="breadcrumb-item active" aria-current="page">Workshops</li>
                     </ol>
-                </nav>
+                </nav> -->
             </div>
         </div>
     </div>
@@ -374,11 +372,11 @@
     <script type="text/javascript">
         $('#register_form').on('submit', function(e) {
             $('#register_form *').fadeOut(2000);
-            $('#register_form').prepend('Thank you for Registering we will reach you out soon...');
+            $('#register_form').prepend('<div class="text-center">Thank you for Registering we will reach you out soon...</div>');
         });
         $('#contact_form').on('submit', function(e) {
             $('#contact_form *').fadeOut(2000);
-            $('#contact_form').prepend('Thank you for contacting we will reach you out soon...');
+            $('#contact_form').prepend('<div class="text-center">Thank you for contacting we will reach you out soon...</div>');
         });
     </script>
 </body>
