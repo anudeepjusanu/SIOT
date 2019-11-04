@@ -1,8 +1,8 @@
-@media only screen and (max-width : 575px) {
+@media only screen and (max-width: 575px) {
     .single-tutor-two {
         padding: 20px;
         display: block;
-        text-align: center; 
+        text-align: center;
     }
     .single-tutor-two .tutor-img {
         margin-right: auto;
@@ -68,7 +68,8 @@
     .xs-pl {
         padding-left: 7px;
     }
-    .xs-pr .mb-30, .xs-pl .mb-30 {
+    .xs-pr .mb-30,
+    .xs-pl .mb-30 {
         margin-bottom: 14px;
     }
     .event-caption {
@@ -82,7 +83,7 @@
     }
 }
 
-@media only screen and (min-width : 576px) and (max-width : 767px) { 
+@media only screen and (min-width: 576px) and (max-width: 767px) {
     .search-course-form {
         max-width: 450px;
     }
@@ -105,7 +106,7 @@
     }
 }
 
-@media only screen and (max-width : 767px) {
+@media only screen and (max-width: 767px) {
     .about-us-text.mt-60 {
         margin: 0;
         padding-bottom: 30px;
@@ -452,8 +453,8 @@
     .ctr-text-content p {
         margin: 10px auto 0;
     }
-    .owl-theme-s2 button.owl-prev { 
-        left:0;
+    .owl-theme-s2 button.owl-prev {
+        left: 0;
     }
     .owl-theme-s2 button.owl-next {
         right: 0;
@@ -576,7 +577,7 @@
     .social-links {
         text-align: center;
         margin-top: 15px;
-    } 
+    }
     .our-partner.pb-180 {
         padding-bottom: 50px;
     }
@@ -586,7 +587,7 @@
     .tutor-title h3 {
         font-size: 20px;
     }
-    .cart-item > a {
+    .cart-item>a {
         background: #f5f5f5;
     }
     .single-blog-post img {
@@ -607,18 +608,18 @@
         height: 6px;
     }
     .siot-navbar ul.navbar-nav::-webkit-scrollbar-track {
-        -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+        -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
         -webkit-border-radius: 0;
         border-radius: 0;
     }
     .siot-navbar ul.navbar-nav::-webkit-scrollbar-thumb {
         -webkit-border-radius: 0;
         border-radius: 0;
-        background: #b1adad; 
-        -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+        background: #b1adad;
+        -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
     }
     .siot-navbar ul.navbar-nav::-webkit-scrollbar-thumb:window-inactive {
-        background: #b1adad; 
+        background: #b1adad;
     }
     .cart-item .nav-link span {
         top: 7px;
@@ -703,11 +704,11 @@
     .comment-area .media h5 {
         font-size: 18px;
     }
-    .comment-area .media > .media-body > .media > img {
+    .comment-area .media>.media-body>.media>img {
         height: 50px;
         width: 50px;
     }
-    .comment-area .media > .media-body > .media {
+    .comment-area .media>.media-body>.media {
         margin-left: -75px;
     }
     .single-course-info {
@@ -731,7 +732,7 @@
     }
 }
 
-@media only screen and (min-width : 768px) and (max-width : 991px) {
+@media only screen and (min-width: 768px) and (max-width: 991px) {
     .course-caption h3 {
         font-size: 20px;
     }
@@ -864,7 +865,7 @@
         clip-path: inherit;
         -webkit-clip-path: inherit;
     }
-    .cart-item > a {
+    .cart-item>a {
         background: #f5f5f5;
     }
     .hero-slider-item {
@@ -961,7 +962,8 @@
     .owl-theme-s2:hover button.owl-next {
         right: 0;
     }
-    .owl-theme-s2 button.owl-prev:hover, .owl-theme-s2 button.owl-next:hover {
+    .owl-theme-s2 button.owl-prev:hover,
+    .owl-theme-s2 button.owl-next:hover {
         background-color: transparent !important;
         color: #FF007D !important;
     }
@@ -1070,7 +1072,7 @@
         margin-left: auto;
         margin-right: auto;
     }
-    .md-width-500 > a> img {
+    .md-width-500>a>img {
         width: 100%;
     }
     .single-feedback-two {
@@ -1150,7 +1152,7 @@
     }
 }
 
-@media only screen and (min-width : 992px) and (max-width : 1199px) {
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
     .about-us-text.mt-60 {
         margin: 0;
         padding: 0;
@@ -1344,7 +1346,8 @@
     .owl-theme-s2:hover button.owl-next {
         right: 0;
     }
-    .owl-theme-s2 button.owl-prev:hover, .owl-theme-s2 button.owl-next:hover {
+    .owl-theme-s2 button.owl-prev:hover,
+    .owl-theme-s2 button.owl-next:hover {
         background-color: transparent !important;
         color: #FF007D !important;
     }
@@ -1439,11 +1442,18 @@
     }
 }
 
-@media only screen and (min-width : 1824px) {
+@media only screen and (min-width: 1824px) {
     .hero-slider-item {
         height: 835px;
     }
     .hero-area {
         height: 840px;
     }
+}
+
+.errors-blk {
+    color: red;
+    position: relative;
+    left: 10px;
+    display: none;
 }

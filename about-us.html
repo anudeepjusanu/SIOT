@@ -131,7 +131,8 @@
             </div>
         </div>
     </nav>
-    <!-- End navbar -->    <!-- registermodal Modal -->
+    <!-- End navbar -->
+    <!-- registermodal Modal -->
     <div class="modal fade fade-scale registermodal" id="registermodal" tabindex="-1" role="dialog">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
@@ -143,28 +144,31 @@
                             </button>
                     </div>
 
-                    <form class="p-3 pb-0" id="register_form" name="register_form" target="hidden_iframe" onsubmit="submitted=true;" action="https://docs.google.com/forms/d/e/1FAIpQLSfM-IeK1T2QiAiTpuyzCsbXPWREOI2llrLnt33K8n2OhyWkfg/formResponse?" method="post">
+                    <form class="p-3 pb-0" id="register_form" name="register_form" target="hidden_iframe" onsubmit="return validateForm()" action="https://docs.google.com/forms/d/e/1FAIpQLSca65dEodPoibe98V9V7-X34VPjVt3I2pZoHJsl9u8fK1I2vQ/formResponse?" method="post">
                         <div class="row">
                             <div class="col-lg-6">
                                 <div class="form-group">
-                                    <input type="text" class="form-control" name="entry.2005620554" id="id_username" placeholder="Username"  required >
+                                    <input type="text" class="form-control" name="entry.2005620554" id="id_username" placeholder="Name" required>
+                                    <div class="errors-blk" id="errors-blk-id_username">Please enter valid name</div>
                                 </div>
                             </div>
 
                             <div class="col-lg-6">
                                 <div class="form-group">
                                     <input type="email" class="form-control" name="entry.1045781291" id="id_email" placeholder="Email address" required>
+                                    <div class="errors-blk" id="errors-blk-id_email">Please enter valid Email</div>
                                 </div>
                             </div>
                         </div>
 
                         <div class="form-group">
                             <input type="number" class="form-control" name="entry.1166974658" id="id_phone_number" placeholder="Phone number" required>
+                            <div class="errors-blk" id="errors-blk-id_phone_number">Please enter valid phone</div>
                         </div>
 
 
                         <div class="form-foot">
-                            <button type="submit" class="btn default-btn white-btn red-btn">Sign Up</button>
+                            <button type="submit" class="btn default-btn white-btn red-btn">Register</button>
                         </div>
                     </form>
                     <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"></iframe>
@@ -199,7 +203,9 @@
                 <div class="col-lg-12">
                     <div class="about-us-text mt-20 mb-20 text-center">
                         <h2 class="mb-4">We Teach. We Advise. You Choose.</h2>
-                        <p>Siot tribe "Smart platform for better career….”. We are one of the pioneers in industrial IoT and provide better teaching manner with different technical skills by real time application-based experiments. Siot tribe develops the self-learning kits for beginners, researchers, students, corporate, institutes and enthusiasts to help in technological research & development. We develop innovative and solitary project ideas as well as electronics-based systems & machines that can be used to automate various operations in industries. Our organisation builds some systems to automate work from various sectors including agriculture, manufacturing, defence, as well as Retail sector.</p>
+                        <p>Siot tribe "Smart platform for better career….”. We are one of the pioneers in industrial IoT and provide better teaching manner with different technical skills by real time application-based experiments. Siot tribe develops the
+                            self-learning kits for beginners, researchers, students, corporate, institutes and enthusiasts to help in technological research & development. We develop innovative and solitary project ideas as well as electronics-based systems
+                            & machines that can be used to automate various operations in industries. Our organisation builds some systems to automate work from various sectors including agriculture, manufacturing, defence, as well as Retail sector.</p>
                     </div>
                 </div>
             </div>
@@ -449,7 +455,8 @@
                 <div class="col-sm-6 col-md-6 col-lg-5">
                     <div class="single-footer-widget">
                         <h3>About Us</h3>
-                        <p>Siot tribe "Smart platform for better career….”. We are one of the pioneers in industrial IoT and provide better teaching manner with different technical skills by real time application-based experiments. Siot tribe develops the self-learning kits...</p>
+                        <p>Siot tribe "Smart platform for better career….”. We are one of the pioneers in industrial IoT and provide better teaching manner with different technical skills by real time application-based experiments. Siot tribe develops the
+                            self-learning kits...</p>
                     </div>
                 </div>
 
@@ -531,17 +538,9 @@
     <!-- Contact Form JS -->
     <script src="assets/js/contact-form-script.js"></script>
     <!-- Script JS -->
+    <script src="assets/js/contact-form-script.js"></script>
     <script src="assets/js/script.js"></script>
-    <script type="text/javascript">
-        $('#register_form').on('submit', function(e) {
-            $('#register_form *').fadeOut(2000);
-            $('#register_form').prepend('<div class="text-center">Thank you for Registering we will reach you out soon...</div>');
-        });
-        $('#contact_form').on('submit', function(e) {
-            $('#contact_form *').fadeOut(2000);
-            $('#contact_form').prepend('<div class="text-center">Thank you for contacting we will reach you out soon...</div>');
-        });
-    </script>
+    <script src="assets/js/form-valid.js"></script>
 </body>
 
 </html>
