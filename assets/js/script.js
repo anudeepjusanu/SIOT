@@ -44,7 +44,8 @@
             autoplay:true,
             autoplayTimeout:5000,
             smartSpeed:1000,
-            responsiveClass:true,
+            // responsiveClass:true,
+            autoHeight: false,
             navText: [
                 "<i class='icofont-swoosh-left'></i>",
                 "<i class='icofont-swoosh-right'></i>"
@@ -122,6 +123,37 @@
             }
         });
         
+        // course stage carosel JS
+        $('.course-stage-carosel').owlCarousel({
+            loop:false,
+            nav:true,
+            // autoplay:true,
+            autoplayHoverPause: true,
+            mouseDrag: false,
+            dots: false,
+            margin:0,
+            stagePadding: 50,
+            responsiveClass:true,
+            navText: [
+                "<i class='icofont-swoosh-left'></i>",
+                "<i class='icofont-swoosh-right'></i>"
+            ],
+            responsive:{
+                0:{
+                    items:1,
+                    autoplay:false,
+                    stagePadding: 20,
+                },
+                768:{
+                    items:1,
+                    autoplay:false,
+                },
+                1000:{
+                    items:1
+                }
+            }
+        });
+
         // Events carosel JS
         $('.events-carosel').owlCarousel({
             loop:false,
@@ -369,6 +401,10 @@
         jQuery(window).on('load', function() {
             $('.preloader').fadeOut();
             // $('#registermodal').modal('show');
+            function Equalheight() {
+                $('.hero-slider-item').matchHeight();
+            }
+            Equalheight();
         });
         
         // Zoom effect image popup JS
@@ -391,4 +427,5 @@
             }
         });
     }); 	
+    
 })(jQuery);

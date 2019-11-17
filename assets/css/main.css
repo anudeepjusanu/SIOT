@@ -6,6 +6,7 @@
 body {
     font-family: 'Oswald', sans-serif;
     font-size: 15px;
+    overflow-x: hidden;
 }
 a, a:hover, .btn {
     transition: .5s;
@@ -258,10 +259,11 @@ button:focus {
 }
 .top-header ul li {
     display: inline-block;
-    color: #666;
+    color: #000;
+	font-weight:600;
 }
 .top-header ul li a {
-    color: #666;
+    color: #000;
 }
 .top-header ul li a:hover {
     color: #035bc5;
@@ -4015,4 +4017,26 @@ ul.lineblock li a {
 }
 .why_choose_us_bg .container {
     position: relative;
+}
+.contact-information-box-adrs p{
+	font-size:14px !important;
+	line-height:16px !important;
+}
+.course-stage-carosel.owl-carousel .owl-stage {
+    padding-left: 0 !important;
+}
+.img-chart {
+    padding:10px;
+    border-radius: 10px;
+    box-shadow: 0 0px 6px rgba(0,0,0,0.2);
+}
+
+.navbar-light .navbar-toggler {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border:1px solid #035bc5;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+
 }
