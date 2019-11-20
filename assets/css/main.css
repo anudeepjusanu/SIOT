@@ -7,6 +7,7 @@ body {
     font-family: 'Oswald', sans-serif;
     font-size: 15px;
     overflow-x: hidden;
+    /* overflow-y: scroll !important; */
 }
 a, a:hover, .btn {
     transition: .5s;
@@ -4040,3 +4041,59 @@ ul.lineblock li a {
     padding-right: 0px !important;
 
 }
+
+.modal-content {
+    box-shadow: -2px 0 20px 5px rgba(76,76,76,0.1);
+    padding: 0;
+    border-radius: 30px;
+    border:0;
+    position: relative;
+}
+.modal .close {
+    width: 30px !important;
+    height: 30px !important;
+    background: #fff !important;
+    box-shadow: 0 4px 6px rgba(0,0,0,.16) !important;
+    font-size: 20px !important;
+    line-height: 20px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    color: #000 !important;
+    border-radius: 50% !important;
+    top: -10px !important;
+    right: -10px !important;
+    opacity: 1 !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    font-family: 'Open Sans', sans-serif;
+    position: absolute !important;
+    font-weight: 400;
+}
+.courseDemoView {
+    background:url('../img/clouds-pop.svg') no-repeat top center ;
+    background-size: contain;
+    padding:110px 20px 25px;
+    min-height: 150px;
+}
+.courseDemoView h2{
+    text-shadow:2px 2px 0px rgba(3, 91, 197, .16);
+    color: #000;
+}
+.courseDemoView h4 {
+    padding:50px 0px 0px;
+}
+.c-pointer {
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+

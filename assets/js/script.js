@@ -401,6 +401,16 @@
         jQuery(window).on('load', function() {
             $('.preloader').fadeOut();
             // $('#registermodal').modal('show');
+            $('#courseDemoModal').modal('show');
+            $('.modal').on('hidden.bs.modal', function () {
+            //If there are any visible
+                if($(".modal:visible").length > 0) {
+                    //Slap the class on it (wait a moment for things to settle)
+                    setTimeout(function() {
+                        $('body').addClass('modal-open');
+                    },100)
+                }
+            });
             function Equalheight() {
                 $('.hero-slider-item').matchHeight();
             }
